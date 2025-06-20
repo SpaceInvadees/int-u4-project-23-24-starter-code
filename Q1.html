@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INT: Unit 4 Quiz Project</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Question 1</h1>
+            <h3>Choose a Color</h3>
+        </div>
+        <a id="b" href="Q2.html"><div class="result" style="background-color: pink;">Pink</div></a>
+        <a id="u" href="Q2.html"><div class="result" style="background-color: rgb(20, 223, 20);">Green</div></a>
+        <a id="tt" href="Q2.html"><div class="result" style="background-color: rgb(255, 83, 83);">Red</div></a>
+        <script>
+            let Q1 = '';
+            let b = document.querySelector('#b');
+            let u = document.querySelector('#u');
+            let tt = document.querySelector('#tt');
+            b.addEventListener('click', function() {
+                Q1 = '1a';
+                localStorage.setItem('Q1', Q1);
+            });
+            u.addEventListener('click', function() {
+                Q1 = '1b';
+                localStorage.setItem('Q1', Q1);
+            });
+            tt.addEventListener('click', function() {
+                Q1 = '1c';
+                localStorage.setItem('Q1', Q1);
+            });
+        </script>
+    </body>
+</html>

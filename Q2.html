@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INT: Unit 4 Quiz Project</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Question 2</h1>
+            <h3>Solve the Math Problem</h3>
+            <p>100 + 4 + 40 + 77 + 50 - 271</p>
+        </div>
+        <a id="o" href="Q3.html"><div class="result" style="background-color: pink;">Zero</div></a>
+        <a id="n" href="Q3.html"><div class="result" style="background-color: rgb(20, 223, 20);">One</div></a>
+        <a id="i" href="Q3.html"><div class="result" style="background-color: rgb(255, 83, 83);">No</div></a>
+        <script>
+            let Q2 = '';
+            let o = document.querySelector('#o');
+            let n = document.querySelector('#n');
+            let i = document.querySelector('#i');
+            o.addEventListener('click', function() {
+                Q2 = '2a';
+                localStorage.setItem('Q2', Q2);
+            });
+            n.addEventListener('click', function() {
+                Q2 = '2b';
+                localStorage.setItem('Q2', Q2);
+            });
+            i.addEventListener('click', function() {
+                Q2 = '2c';
+                localStorage.setItem('Q2', Q2);
+            });
+        </script>
+    </body>
+</html>

@@ -8,7 +8,7 @@ body {
 }
 
 /* Title section styling */
-.title h1 {
+.title, h1, p {
     text-align: center;
     color: #333;
 }
@@ -41,4 +41,22 @@ body {
     margin-top: 20px;
     border-radius: 8px;
     font-size: 1.2em;
+    cursor: pointer;
 }
+.resultIMG {
+    background-color: #e2e2e2;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+.resultIMG img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;   /* or contain, depending on your goal */
+        display: block;
+}
+.resultIMG h1 {
+    font-size: calc(100vmin / 2); /* scales with viewport */
+  }

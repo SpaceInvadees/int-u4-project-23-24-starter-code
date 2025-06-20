@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INT: Unit 4 Quiz Project</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Question 3</h1>
+            <h3>What do you see first?</h3>
+            <img src="https://static.toiimg.com/thumb/msid-120929680,imgsize-68678,width-400,resizemode-4/120929680.jpg">
+        </div>
+        <a id="nin" href="results.html"><div class="result" style="background-color: pink;">1 Face</div></a>
+        <a id="g" href="results.html"><div class="result" style="background-color: rgb(20, 223, 20);">2 Faces</div></a>
+        <a id="s" href="results.html"><div class="result" style="background-color: rgb(255, 83, 83);">1 Candlestick</div></a>
+        <script>
+            let Q3 = '';
+            let nin = document.querySelector('#nin');
+            let g = document.querySelector('#g');
+            let s = document.querySelector('#s');
+            nin.addEventListener('click', function() {
+                Q3 = '3a';
+                localStorage.setItem('Q3', Q3);
+            });
+            g.addEventListener('click', function() {
+                Q3 = '3b';
+                localStorage.setItem('Q3', Q3);
+            });
+            s.addEventListener('click', function() {
+                Q3 = '3c';
+                localStorage.setItem('Q3', Q3);
+            });
+        </script>
+    </body>
+</html>
